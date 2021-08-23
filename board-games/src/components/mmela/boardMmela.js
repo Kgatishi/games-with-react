@@ -11,7 +11,7 @@ class Square extends React.Component {
     }
 }
 
-class boardMmela extends React.Component {
+class BoardMmela extends React.Component {
     render(){
         return (
             <button>
@@ -21,4 +21,4 @@ class boardMmela extends React.Component {
     }
 }
 
-export default boardMmela;
+export default BoardMmela;

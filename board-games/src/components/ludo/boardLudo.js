@@ -1,19 +1,44 @@
+import React from 'react'; 
+import './ludo.css'
 class Square extends React.Component {
     render() {
         return (
             <button className="square">
-                square
+                
             </button>
         );
     }
 }
 
-class boardLudo extends React.Component {
+class BoardLudo extends React.Component {
+    renderSquare(i){
+        return (
+            <Square/>
+        );
+    }
     render(){
         return (
-            <button>
-                Mmela
-            </button>
+            <div>
+                <div className="board-row">
+                {this.renderSquare(0)}{this.renderSquare(1)}{this.renderSquare(2)}
+                </div>
+                <div className="board-row">
+                {this.renderSquare(0)}{this.renderSquare(1)}{this.renderSquare(2)}
+                </div>
+                <div className="board-row">
+                {this.renderSquare(0)}{this.renderSquare(1)}{this.renderSquare(2)}
+                </div>
+                <div className="board-row">
+                {this.renderSquare(0)}{this.renderSquare(1)}{this.renderSquare(2)}
+                </div>
+                <div className="board-row">
+                {this.renderSquare(0)}{this.renderSquare(1)}{this.renderSquare(2)}
+                </div>
+                <div className="board-row">
+                {this.renderSquare(0)}{this.renderSquare(1)}{this.renderSquare(2)}
+                </div>
+            </div>
         );
     }
 }
+export default BoardLudo;

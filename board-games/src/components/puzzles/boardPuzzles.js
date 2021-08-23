@@ -1,3 +1,5 @@
+import React from 'react'; 
+
 class Square extends React.Component {
     render() {
         return (
@@ -8,12 +10,14 @@ class Square extends React.Component {
     }
 }
 
-class boardPuzzles extends React.Component {
+class BoardPuzzles extends React.Component {
     render(){
         return (
             <button>
-                Mmela
+                Puzzles
             </button>
         );
     }
 }
+
+export default BoardPuzzles;

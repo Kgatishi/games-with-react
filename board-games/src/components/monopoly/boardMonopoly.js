@@ -1,3 +1,5 @@
+import React from 'react'; 
+
 class Square extends React.Component {
     render() {
         return (
@@ -8,12 +10,14 @@ class Square extends React.Component {
     }
 }
 
-class boardMonopoly extends React.Component {
+class BoardMonopoly extends React.Component {
     render(){
         return (
             <button>
-                Mmela
+                Monopoly
             </button>
         );
     }
 }
+
+export default BoardMonopoly;

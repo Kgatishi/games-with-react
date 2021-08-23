@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import Games from './components/games';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Navbar from 'react-bootstrap/Navbar';
+
+import logo from './logo.svg';
+import './App.css';
+import Home from './components/home';
 
 function App() {
     return (
@@ -27,7 +28,7 @@ function App() {
             </Row>
             <br/>
             <Row className="row">
-                <Games />
+                <Home view="home" />
             </Row>
             <br/>
             <Row className="row">
